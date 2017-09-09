@@ -43,7 +43,7 @@ namespace Pathfinding {
 		/** Current desired velocity of the agent.
 		 * Lies in the movement plane.
 		 */
-		protected Vector2 velocity2D;
+		public Vector2 velocity2D;
 
 		/** Velocity due to gravity.
 		 * Perpendicular to the movement plane.
