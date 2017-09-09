@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 12445a55b9693f24a8d7d94d78837856
+timeCreated: 1504978218
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WolfAnimation-01_0
+    21300002: WolfAnimation-01_1
+    21300004: WolfAnimation-01_2
+    21300006: WolfAnimation-01_3
+    21300008: WolfAnimation-01_4
+    21300010: WolfAnimation-01_5
+    21300012: WolfAnimation-01_6
+    21300014: WolfAnimation-01_7
+    21300016: WolfAnimation-01_8
+    21300018: WolfAnimation-01_9
+    21300020: WolfAnimation-01_10
+    21300022: WolfAnimation-01_11
+    21300024: WolfAnimation-01_12
+    21300026: WolfAnimation-01_13
+    21300028: WolfAnimation-01_14
+    21300030: WolfAnimation-01_15
+    21300032: WolfAnimation-01_16
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WolfAnimation-01_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1356
+        width: 984
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_1
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 1358
+        width: 984
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_2
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1357
+        width: 983
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_3
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 1364
+        width: 985
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 314
+        width: 983
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_6
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 308
+        width: 983
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_7
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 330
+        width: 983
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_9
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 341
+        width: 985
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_12
+      rect:
+        serializedVersion: 2
+        x: 2527
+        y: 329
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WolfAnimation-01_14
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 304
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
