@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 20d87204c4958804497fac580da5c56b
+timeCreated: 1504990100
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WereWolf-Walking-01_0
+    21300002: WereWolf-Walking-01_1
+    21300004: WereWolf-Walking-01_2
+    21300006: WereWolf-Walking-01_3
+    21300008: WereWolf-Walking-01_4
+    21300010: WereWolf-Walking-01_5
+    21300012: WereWolf-Walking-01_6
+    21300014: WereWolf-Walking-01_7
+    21300016: WereWolf-Walking-01_8
+    21300018: WereWolf-Walking-01_9
+    21300020: WereWolf-Walking-01_10
+    21300022: WereWolf-Walking-01_11
+    21300024: WereWolf-Walking-01_12
+    21300026: WereWolf-Walking-01_13
+    21300028: WereWolf-Walking-01_14
+    21300030: WereWolf-Walking-01_15
+    21300032: WereWolf-Walking-01_16
+    21300034: WereWolf-Walking-01_17
+    21300036: WereWolf-Walking-01_18
+    21300038: WereWolf-Walking-01_19
+    21300040: WereWolf-Walking-01_20
+    21300042: WereWolf-Walking-01_21
+    21300044: WereWolf-Walking-01_22
+    21300046: WereWolf-Walking-01_23
+    21300048: WereWolf-Walking-01_24
+    21300050: WereWolf-Walking-01_25
+    21300052: WereWolf-Walking-01_26
+    21300054: WereWolf-Walking-01_27
+    21300056: WereWolf-Walking-01_28
+    21300058: WereWolf-Walking-01_29
+    21300060: WereWolf-Walking-01_30
+    21300062: WereWolf-Walking-01_31
+    21300064: WereWolf-Walking-01_32
+    21300066: WereWolf-Walking-01_33
+    21300068: WereWolf-Walking-01_34
+    21300070: WereWolf-Walking-01_35
+    21300072: WereWolf-Walking-01_36
+    21300074: WereWolf-Walking-01_37
+    21300076: WereWolf-Walking-01_38
+    21300078: WereWolf-Walking-01_39
+    21300080: WereWolf-Walking-01_40
+    21300082: WereWolf-Walking-01_41
+    21300084: WereWolf-Walking-01_42
+    21300086: WereWolf-Walking-01_43
+    21300088: WereWolf-Walking-01_44
+    21300090: WereWolf-Walking-01_45
+    21300092: WereWolf-Walking-01_46
+    21300094: WereWolf-Walking-01_47
+    21300096: WereWolf-Walking-01_48
+    21300098: WereWolf-Walking-01_49
+    21300100: WereWolf-Walking-01_50
+    21300102: WereWolf-Walking-01_51
+    21300104: WereWolf-Walking-01_52
+    21300106: WereWolf-Walking-01_53
+    21300108: WereWolf-Walking-01_54
+    21300110: WereWolf-Walking-01_55
+    21300112: WereWolf-Walking-01_56
+    21300114: WereWolf-Walking-01_57
+    21300116: WereWolf-Walking-01_58
+    21300118: WereWolf-Walking-01_59
+    21300120: WereWolf-Walking-01_60
+    21300122: WereWolf-Walking-01_61
+    21300124: WereWolf-Walking-01_62
+    21300126: WereWolf-Walking-01_63
+    21300128: WereWolf-Walking-01_64
+    21300130: WereWolf-Walking-01_65
+    21300132: WereWolf-Walking-01_66
+    21300134: WereWolf-Walking-01_67
+    21300136: WereWolf-Walking-01_68
+    21300138: WereWolf-Walking-01_69
+    21300140: WereWolf-Walking-01_70
+    21300142: WereWolf-Walking-01_71
+    21300144: WereWolf-Walking-01_72
+    21300146: WereWolf-Walking-01_73
+    21300148: WereWolf-Walking-01_74
+    21300150: WereWolf-Walking-01_75
+    21300152: WereWolf-Walking-01_76
+    21300154: WereWolf-Walking-01_77
+    21300156: WereWolf-Walking-01_78
+    21300158: WereWolf-Walking-01_79
+    21300160: WereWolf-Walking-01_80
+    21300162: WereWolf-Walking-01_81
+    21300164: WereWolf-Walking-01_82
+    21300166: WereWolf-Walking-01_83
+    21300168: WereWolf-Walking-01_84
+    21300170: WereWolf-Walking-01_85
+    21300172: WereWolf-Walking-01_86
+    21300174: WereWolf-Walking-01_87
+    21300176: WereWolf-Walking-01_88
+    21300178: WereWolf-Walking-01_89
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2133.3335
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_1
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 2133.3335
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_2
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 2133.3335
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_3
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 2133.3335
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1067.3334
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_5
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1067.3334
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_6
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1067.3334
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_7
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 1067.3334
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.333374
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_9
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1.333374
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_10
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 1.333374
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WereWolf-Walking-01_11
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 1.333374
+        width: 1066.75
+        height: 1066.6666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
