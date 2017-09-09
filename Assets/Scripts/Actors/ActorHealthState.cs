@@ -12,7 +12,7 @@ namespace Assets.Scripts.Actors
         {
             get
             {
-                return (float) Health / (float) MaxHealth;
+                return (float)Health / (float)MaxHealth;
             }
         }
         public bool IsDeath
@@ -30,12 +30,16 @@ namespace Assets.Scripts.Actors
 
         public void TakeDamageFrom(IDamager damager)
         {
-            Debug.Log("Taking damage!");
+            if (IsDeath)
+                return;
 
             if (damager.Damage >= Health)
+            {
                 Health = 0;
-            else
-                Health -= damager.Damage;
+                return;
+            }
+
+            Health -= damager.Damage;
         }
     }
 }
