@@ -1,15 +1,15 @@
 ﻿using Assets.Scripts.Utils;
 using UnityEngine;
 
-namespace Assets.Scripts.Actors.Weapons.Sword
+namespace Assets.Scripts.Actors.Weapons.Claws
 {
-    public class Sword : MonoBehaviour, IWeapon
+    class Claw : MonoBehaviour, IWeapon
     {
         public void Attack()
         {
             var range = 0.6f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
-            var swordAttack = new SwordAttack(3);
+            var swordAttack = new ClawAttack(2);
 
             var allObjects = Object.FindObjectsOfType<GameObject>();
             foreach (var obj in allObjects)
@@ -26,7 +26,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
                 if (deltaPosition.magnitude > 1.0f)
                     continue;
 
-                var damageables = obj.GetInterfaces<IDamageable>();   
+                var damageables = obj.GetInterfaces<IDamageable>();
                 foreach (var damageable in damageables)
                 {
                     damageable.TakeDamageFrom(swordAttack);

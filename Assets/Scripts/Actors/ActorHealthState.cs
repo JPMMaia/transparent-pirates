@@ -1,10 +1,13 @@
-﻿using Assets.Scripts.Actors.Weapons;
+﻿using System;
+using Assets.Scripts.Actors.Weapons;
 using UnityEngine;
 
 namespace Assets.Scripts.Actors
 {
     public class ActorHealthState : MonoBehaviour, IDamageable
     {
+        public event EventHandler OnDie;
+
         public uint MaxHealth;
 
         public uint Health { get; private set; }
@@ -12,7 +15,7 @@ namespace Assets.Scripts.Actors
         {
             get
             {
-                return (float) Health / (float) MaxHealth;
+                return (float)Health / (float)MaxHealth;
             }
         }
         public bool IsDeath
@@ -30,12 +33,20 @@ namespace Assets.Scripts.Actors
 
         public void TakeDamageFrom(IDamager damager)
         {
-            Debug.Log("Taking damage!");
+            if (IsDeath)
+                return;
 
             if (damager.Damage >= Health)
+            {
                 Health = 0;
-            else
-                Health -= damager.Damage;
+
+                if (OnDie != null)
+                    OnDie(this, EventArgs.Empty);
+
+                return;
+            }
+
+            Health -= damager.Damage;
         }
     }
 }
