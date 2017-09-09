@@ -1,15 +1,18 @@
 ﻿using Assets.Scripts.Actors.Weapons;
+using UnityEngine;
 
 namespace Assets.Scripts.Actors
 {
-    public class ActorHealthState : IDamageable
+    public class ActorHealthState : MonoBehaviour, IDamageable
     {
+        public uint MaxHealth;
+
         public uint Health { get; private set; }
         public float HealthPercentage
         {
             get
             {
-                return (float) Health / (float) _maxHealth;
+                return (float) Health / (float) MaxHealth;
             }
         }
         public bool IsDeath
@@ -20,16 +23,15 @@ namespace Assets.Scripts.Actors
             }
         }
 
-        private uint _maxHealth;
-
-        public ActorHealthState(uint maxHealth)
+        public void Start()
         {
-            _maxHealth = maxHealth;
-            Health = maxHealth;
+            Health = MaxHealth;
         }
 
         public void TakeDamageFrom(IDamager damager)
         {
+            Debug.Log("Taking damage!");
+
             if (damager.Damage >= Health)
                 Health = 0;
             else
