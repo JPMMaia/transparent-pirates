@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Actors;
 
 
 public class Player2 : MonoBehaviour {
@@ -29,8 +30,9 @@ public class Player2 : MonoBehaviour {
 
         if(Input.GetMouseButtonDown(1))
         {
-            var weaponState = GetComponent<Assets.Scripts.Actors.ActorWeaponState>();
-            weaponState.Attack();
+            var weaponState = GetComponent<ActorWeaponState>();
+            var luckyState = GetComponent<ActorLuckyState>();
+            weaponState.Attack(luckyState.DamageMultiplier);
 
             _anim.SetBool("Shooting", true);
         }

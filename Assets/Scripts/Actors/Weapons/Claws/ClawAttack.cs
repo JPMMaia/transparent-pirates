@@ -4,7 +4,7 @@ namespace Assets.Scripts.Actors.Weapons.Claws
 {
     class ClawAttack : IDamager
     {
-        public uint Damage
+        public float Damage
         {
             get
             {
@@ -12,9 +12,9 @@ namespace Assets.Scripts.Actors.Weapons.Claws
             }
         }
 
-        private uint _damage;
+        private float _damage;
 
-        public ClawAttack(uint damage)
+        public ClawAttack(float damage)
         {
             _damage = damage;
         }

@@ -12,7 +12,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
         public float BulletInitialVelocity = 1.0f;
         public string[] IgnoreTags;
 
-        public void Attack()
+        public void Attack(float damageMultiplier)
         {
             if (CurrentCooldown < MaxCooldown)
                 return;
@@ -26,7 +26,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
             var direction = (target - origin).normalized;
 
             var bullet = Instantiate(BulletPrefab, origin, new Quaternion(0.0f, 0.0f, 0.0f, 1.0f));
-            bullet.Damage = (uint) (DamageMultiplier);
+            bullet.Damage = (DamageMultiplier * damageMultiplier);
             foreach(var tag in IgnoreTags)
                 bullet.IgnoreTags.Add(tag);
 

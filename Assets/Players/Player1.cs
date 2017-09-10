@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using Assets.Scripts.Actors;
+
 public class Player1 : MonoBehaviour {
 
     public float maxSpeed = 5f;
@@ -22,8 +24,9 @@ public class Player1 : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            var weaponState = GetComponent<Assets.Scripts.Actors.ActorWeaponState>();
-            weaponState.Attack();
+            var weaponState = GetComponent<ActorWeaponState>();
+            var luckyState = GetComponent<ActorLuckyState>();
+            weaponState.Attack(luckyState.DamageMultiplier);
             anim.SetBool("Attacking", true);
         }
         else

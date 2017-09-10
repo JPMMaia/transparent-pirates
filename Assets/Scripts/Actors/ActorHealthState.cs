@@ -36,14 +36,7 @@ namespace Assets.Scripts.Actors
             if (IsDeath)
                 return;
 
-            var damage = damager.Damage * UnityEngine.Random.Range(.8f, 1.2f);
-            if (UnityEngine.Random.Range(0f, 1f) < .4f)
-            {
-                damage *= 2;
-                Debug.Log("Crit");
-            }
-
-            Health -= Mathf.FloorToInt(damage);
+            Health -= Mathf.FloorToInt(damager.Damage);
             
             if (Health <= 0)
             {

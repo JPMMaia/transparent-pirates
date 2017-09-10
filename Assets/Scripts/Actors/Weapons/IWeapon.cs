@@ -2,7 +2,6 @@
 {
     public interface IWeapon
     {
-
-        void Attack();
+        void Attack(float damageMultiplier);
     }
 }

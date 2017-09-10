@@ -2,6 +2,6 @@
 {
     public interface IDamager
     {
-        uint Damage { get; }
+        float Damage { get; }
     }
 }
