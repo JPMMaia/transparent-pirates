@@ -5,11 +5,13 @@ namespace Assets.Scripts.Actors.Weapons.Claws
 {
     class Claw : MonoBehaviour, IWeapon
     {
+        public float DamageMultiplier = 4.0f;
+
         public void Attack()
         {
             var range = 0.6f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
-            var swordAttack = new ClawAttack(2);
+            var swordAttack = new ClawAttack((uint)DamageMultiplier);
 
             var allObjects = Object.FindObjectsOfType<GameObject>();
             foreach (var obj in allObjects)
