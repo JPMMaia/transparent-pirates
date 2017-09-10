@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 727e57682b6a1254a8b151f4a5c92a12
+timeCreated: 1505034052
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Airstrike Condensed
+  fontNames:
+  - Airstrike Condensed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

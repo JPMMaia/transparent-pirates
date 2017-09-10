@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ac0d71d0160b4ab418431f10a90d0ed2
+timeCreated: 1505034052
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Airstrike Bullet
+  fontNames:
+  - Airstrike Bullet
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
