@@ -40,7 +40,6 @@ namespace Assets.Scripts.Actors
             if (UnityEngine.Random.Range(0f, 1f) < .4f)
             {
                 damage *= 2;
-                Debug.Log("Crit");
             }
 
             Health -= Mathf.FloorToInt(damage);

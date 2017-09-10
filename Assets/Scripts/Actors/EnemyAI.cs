@@ -36,9 +36,10 @@ public class EnemyAI : MonoBehaviour {
         {
             GetComponentInParent<AIPath>().target = players[1].transform;
         }
+
         var d3 = Vector3.Distance(transform.position, GetComponentInParent<AIPath>().target.position);
 
-        if (d3 < 2)
+        if (d3 < 3)
         {
             GetComponent<ActorWeaponState>().Attack();
             _animator.SetBool("Attacking", true);
