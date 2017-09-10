@@ -26,5 +26,11 @@ public class Player2 : MonoBehaviour {
         {
             aipath.target.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
+
+        if(Input.GetMouseButtonDown(1))
+        {
+            var weaponState = GetComponent<Assets.Scripts.Actors.ActorWeaponState>();
+            weaponState.Attack();
+        }
 	}
 }

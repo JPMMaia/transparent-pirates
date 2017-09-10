@@ -12,6 +12,10 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
             {
                 return _damage;
             }
+            set
+            {
+                _damage = value;
+            }
         }
         public List<String> IgnoreTags
         {
@@ -21,10 +25,10 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
             }
         }
 
-        private List<String> _ignoreTags;
+        private List<String> _ignoreTags = new List<string>();
         private uint _damage;
 
-        public void OnCollisionEnter(Collision other)
+        public void OnTriggerEnter2D(Collider2D other)
         {
             if (_ignoreTags.Exists(e => e == other.gameObject.tag))
                 return;
