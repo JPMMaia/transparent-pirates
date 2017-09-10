@@ -31,6 +31,12 @@ public class Player2 : MonoBehaviour {
         {
             var weaponState = GetComponent<Assets.Scripts.Actors.ActorWeaponState>();
             weaponState.Attack();
+
+            _anim.SetBool("Shooting", true);
+        }
+        else
+        {
+            _anim.SetBool("Shooting", false);
         }
 	}
 }
