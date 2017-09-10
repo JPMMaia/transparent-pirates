@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Slideshow : MonoBehaviour 
 {
 	public Texture[] Images;
 	public RawImage CurrentImage;
+    public AudioSource MainAudioSource;
+    public AudioClip MainSound;
+    public AudioClip FirstSound;
+    public AudioClip FifthSound;
+    public AudioClip SeventhSound;
 
-	private uint CurrentSlide
+    private uint CurrentSlide
 	{
 		get
 		{
@@ -23,14 +29,35 @@ public class Slideshow : MonoBehaviour
 			{
 				CurrentImage.texture = Images[value];
 			}
+
+            if(value == 0)
+            {
+                _audioSource.clip = FirstSound;
+                _audioSource.Play();
+            }
+            else if(value == 4)
+            {
+                _audioSource.Stop();
+                _audioSource.clip = FifthSound;
+                _audioSource.Play();
+            }
+            else if(value == 6)
+            {
+                _audioSource.Stop();
+                _audioSource.clip = SeventhSound;
+                _audioSource.Play();
+            }
 		}
 	}
 	private uint _currentSlide;
 	private Timer _timer;
 	private bool _elapsed;
+    private AudioSource _audioSource;
 
 	void Start () 
 	{
+        _audioSource = GetComponent<AudioSource>();
+
 		CurrentSlide = 0;
 		_elapsed = false;
 		
@@ -38,6 +65,9 @@ public class Slideshow : MonoBehaviour
 		_timer.Elapsed += _timer_Elapsed;
 
 		_timer.Start();
+
+        MainAudioSource.loop = true;
+        MainAudioSource.Play();
 	}
 
 	public void Update()
@@ -51,7 +81,11 @@ public class Slideshow : MonoBehaviour
 				// Stop timer:
 				_timer.Stop();
 
-				// TODO Initiate game:
+                // Initiate game:
+                SceneManager.LoadScene("TerrainScene");
+
+                // Destroy object:
+                Destroy(this.gameObject);
 
 				return;
 			}
