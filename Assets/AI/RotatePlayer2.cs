@@ -9,13 +9,10 @@ public class RotatePlayer2 : MonoBehaviour {
     void LateUpdate () {
         transform.rotation = Quaternion.Euler(0, 0, 0);
 
-        if (GetComponentInParent<AIPath>().velocity2D.magnitude > .05)
-        {
-            if (GetComponentInParent<AIPath>().velocity2D.x < 0)
-                transform.localScale = new Vector3(.5f, .5f, .5f);
-            else
-                transform.localScale = new Vector3(-.5f, .5f, .5f);
-        }
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        else
+            transform.localScale = new Vector3(-1f, 1f, 1f);
 
     }
     
