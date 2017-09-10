@@ -9,8 +9,8 @@ namespace Assets.Scripts.Actors
         public event EventHandler OnDie;
 
         public uint MaxHealth;
+        public uint Health;
 
-        public uint Health { get; private set; }
         public float HealthPercentage
         {
             get
