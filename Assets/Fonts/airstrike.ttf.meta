@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 87f7c560b734b274f9364a71f310b929
+timeCreated: 1505034052
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Airstrike
+  fontNames:
+  - Airstrike
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

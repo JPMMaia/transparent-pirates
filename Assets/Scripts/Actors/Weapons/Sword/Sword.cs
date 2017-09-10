@@ -10,7 +10,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
         public float CurrentCooldown = 0.0f;
         public float DamageMultiplier = 5.0f;
 
-        public void Attack()
+        public void Attack(float damageMultiplier)
         {
             if (CurrentCooldown < MaxCooldown)
                 return;
@@ -20,7 +20,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
 
             var range = 0.6f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
-            var swordAttack = new SwordAttack((uint) DamageMultiplier);
+            var swordAttack = new SwordAttack(DamageMultiplier * damageMultiplier);
 
             var allObjects = GameObject.FindObjectsOfType<GameObject>();
             foreach (var obj in allObjects)

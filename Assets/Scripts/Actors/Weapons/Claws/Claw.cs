@@ -10,7 +10,7 @@ namespace Assets.Scripts.Actors.Weapons.Claws
 
         public float DamageMultiplier = 20.0f;
 
-        public void Attack()
+        public void Attack(float damageMultiplier)
         {
             if (CurrentCooldown < MaxCooldown)
                 return;
@@ -19,7 +19,7 @@ namespace Assets.Scripts.Actors.Weapons.Claws
             var range = 2f;
             var collisionCenter = transform.parent.position + transform.parent.up * range;
             
-            var swordAttack = new ClawAttack((uint)DamageMultiplier);
+            var swordAttack = new ClawAttack(DamageMultiplier * damageMultiplier);
 
             var allObjects = GameObject.FindGameObjectsWithTag("Player");
 

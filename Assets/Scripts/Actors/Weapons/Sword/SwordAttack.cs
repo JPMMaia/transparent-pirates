@@ -2,7 +2,7 @@
 {
     public class SwordAttack : IDamager
     {
-        public uint Damage
+        public float Damage
         {
             get
             {
@@ -10,9 +10,9 @@
             }
         }
 
-        private uint _damage;
+        private float _damage;
 
-        public SwordAttack(uint damage)
+        public SwordAttack(float damage)
         {
             _damage = damage;
         }

@@ -6,11 +6,11 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
 {
     public class Bullet : MonoBehaviour, IDamager
     {
-        public uint Damage
+        public float Damage
         {
             get
             {
-                return (uint)(_damage * DamageMultiplier);
+                return _damage * DamageMultiplier;
             }
             set
             {
@@ -29,7 +29,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
         public float DamageMultiplier = 1.0f;
 
         private List<String> _ignoreTags = new List<string>();
-        private uint _damage;
+        private float _damage;
 
         public void OnTriggerEnter2D(Collider2D other)
         {

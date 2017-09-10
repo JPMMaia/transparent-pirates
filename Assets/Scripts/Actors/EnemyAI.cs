@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour {
 
         if (d3 < 3)
         {
-            GetComponent<ActorWeaponState>().Attack();
+            GetComponent<ActorWeaponState>().Attack(1.0f);
             _animator.SetBool("Attacking", true);
         } else
         {

@@ -13,9 +13,9 @@ namespace Assets.Scripts.Actors
             _weapon = Weapon.GetComponent<IWeapon>();
         }
 
-        public void Attack()
+        public void Attack(float damageMultiplier)
         {
-            _weapon.Attack();
+            _weapon.Attack(damageMultiplier);
         }
     }
 }

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0ce0c26d574c6f4489cf7b1e00ef678c
+timeCreated: 1505034051
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Airstrike Academy
+  fontNames:
+  - Airstrike Academy
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
