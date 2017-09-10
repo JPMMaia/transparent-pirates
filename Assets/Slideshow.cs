@@ -33,18 +33,21 @@ public class Slideshow : MonoBehaviour
             if(value == 0)
             {
                 _audioSource.clip = FirstSound;
+                _audioSource.volume = 0.3f;
                 _audioSource.Play();
             }
             else if(value == 4)
             {
                 _audioSource.Stop();
                 _audioSource.clip = FifthSound;
+                _audioSource.volume = 0.45f;
                 _audioSource.Play();
             }
             else if(value == 6)
             {
                 _audioSource.Stop();
                 _audioSource.clip = SeventhSound;
+                _audioSource.volume = 1.0f;
                 _audioSource.Play();
             }
 		}
@@ -67,6 +70,7 @@ public class Slideshow : MonoBehaviour
 		_timer.Start();
 
         MainAudioSource.loop = true;
+        MainAudioSource.volume = 1.0f;
         MainAudioSource.Play();
 	}
 
