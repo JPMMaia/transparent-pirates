@@ -6,8 +6,15 @@ namespace Assets.Scripts.Actors.Weapons.Sword
 {
     public class Sword : MonoBehaviour, IWeapon
     {
+        public float MaxCooldown = 1.0f;
+        public float CurrentCooldown = 0.0f;
+
         public void Attack()
         {
+            if (CurrentCooldown < MaxCooldown)
+                return;
+            CurrentCooldown = 0.0f;
+
             var range = 0.6f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
             var swordAttack = new SwordAttack(3);
@@ -33,6 +40,11 @@ namespace Assets.Scripts.Actors.Weapons.Sword
                     damageable.TakeDamageFrom(swordAttack);
                 }
             }
+        }
+
+        public void FixedUpdate()
+        {
+            CurrentCooldown += Time.fixedDeltaTime;
         }
     }
 }
