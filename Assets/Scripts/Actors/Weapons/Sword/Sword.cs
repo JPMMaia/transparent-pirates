@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Utils;
+﻿using System;
+using Assets.Scripts.Utils;
 using UnityEngine;
 
 namespace Assets.Scripts.Actors.Weapons.Sword
@@ -11,7 +12,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
             var collisionCenter = transform.parent.position + transform.parent.right * range;
             var swordAttack = new SwordAttack(3);
 
-            var allObjects = Object.FindObjectsOfType<GameObject>();
+            var allObjects = GameObject.FindObjectsOfType<GameObject>();
             foreach (var obj in allObjects)
             {
                 if (obj == transform.parent.gameObject)
