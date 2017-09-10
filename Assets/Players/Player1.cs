@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 using Assets.Scripts.Actors;
 
@@ -17,6 +18,13 @@ public class Player1 : MonoBehaviour {
         rigidBody = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
 
+        GetComponent<ActorHealthState>().OnDie += Player2_OnDie;
+
+    }
+
+    private void Player2_OnDie(object sender, System.EventArgs e)
+    {
+        SceneManager.LoadScene("GameOver");
     }
 
     // Update is called once per frame

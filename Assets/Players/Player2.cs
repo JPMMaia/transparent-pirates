@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Actors;
+using UnityEngine.SceneManagement;
 
 
 public class Player2 : MonoBehaviour {
@@ -13,10 +14,17 @@ public class Player2 : MonoBehaviour {
 	void Start () {
         aipath = GetComponent<AIPath>();
         _anim = GetComponentInChildren<Animator>();
+
+        GetComponent<ActorHealthState>().OnDie += Player2_OnDie;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Player2_OnDie(object sender, System.EventArgs e)
+    {
+        SceneManager.LoadScene("GameOver");
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (aipath.velocity2D.magnitude > .1f)
             _anim.SetBool("Moving", true);
         else

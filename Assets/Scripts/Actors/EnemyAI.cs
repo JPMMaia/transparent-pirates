@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.Scripts.Actors;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour {
 
@@ -21,6 +22,11 @@ public class EnemyAI : MonoBehaviour {
     {
         _animator.SetBool("Alive", false);
         Deactivate();
+
+        if(gameObject.name == "Werewolf")
+        {
+            SceneManager.LoadScene("Level 2");
+        }
     }
 
     // Update is called once per frame
