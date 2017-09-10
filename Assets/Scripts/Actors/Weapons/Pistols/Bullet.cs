@@ -36,8 +36,16 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
                 return;
 
             var damageables = other.gameObject.GetComponents<IDamageable>();
+            var damageablesP = other.gameObject.GetComponentsInParent<IDamageable>();
 
-            foreach(var damageable in damageables)
+            List<IDamageable> list = new List<IDamageable>();
+
+            foreach (var d in damageablesP)
+                list.Add(d);
+            foreach (var d in damageables)
+                list.Add(d);
+
+            foreach (var damageable in list)
             {
                 damageable.TakeDamageFrom(this);
             }

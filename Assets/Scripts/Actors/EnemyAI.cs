@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour {
         _animator.SetBool("Alive", false);
         GetComponent<Seeker>().enabled = false;
         GetComponent<AIPath>().enabled = false;
-        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponentInChildren<BoxCollider2D>().enabled = false;
         GetComponent<EnemyAI>().enabled = false;
         GetComponentInChildren<KeepRotation>().enabled = false;
     }
