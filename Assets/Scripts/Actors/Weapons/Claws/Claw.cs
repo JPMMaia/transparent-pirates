@@ -16,7 +16,7 @@ namespace Assets.Scripts.Actors.Weapons.Claws
                 return;
             CurrentCooldown = 0.0f;
 
-            var range = 3f;
+            var range = 2f;
             var collisionCenter = transform.parent.position + transform.parent.up * range;
             
             var swordAttack = new ClawAttack(DamageMultiplier * damageMultiplier);

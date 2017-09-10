@@ -36,6 +36,8 @@ namespace Assets.Scripts.Actors
             if (IsDeath)
                 return;
 
+          
+
             Health -= Mathf.FloorToInt(damager.Damage);
             
             if (Health <= 0)
