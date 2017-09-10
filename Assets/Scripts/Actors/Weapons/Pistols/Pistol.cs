@@ -6,6 +6,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
     {
         public float MaxCooldown = 0.3f;
         public float CurrentCooldown = 0.0f;
+        public float DamageMultiplier = 1.0f;
 
         public Bullet BulletPrefab;
         public float BulletInitialVelocity = 1.0f;
@@ -17,13 +18,15 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
                 return;
             CurrentCooldown = 0.0f;
 
+            GetComponent<AudioSource>().Play();
+
             var origin = transform.position;
             var target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             var direction = (target - origin).normalized;
 
             var bullet = Instantiate(BulletPrefab, origin, new Quaternion(0.0f, 0.0f, 0.0f, 1.0f));
-            bullet.Damage = 2;
+            bullet.Damage = (uint) (DamageMultiplier);
             foreach(var tag in IgnoreTags)
                 bullet.IgnoreTags.Add(tag);
 

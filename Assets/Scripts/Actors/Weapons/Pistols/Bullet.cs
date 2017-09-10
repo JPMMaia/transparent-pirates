@@ -10,7 +10,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
         {
             get
             {
-                return _damage;
+                return (uint)(_damage * DamageMultiplier);
             }
             set
             {
@@ -24,6 +24,8 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
                 return _ignoreTags;
             }
         }
+
+        public float DamageMultiplier = 1.0f;
 
         private List<String> _ignoreTags = new List<string>();
         private uint _damage;
@@ -40,6 +42,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
                 damageable.TakeDamageFrom(this);
             }
 
+            SoundPrefabs.Instance.BulletsAudioSource.Play();
             Destroy(this.gameObject);
         }
     }

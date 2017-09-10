@@ -8,6 +8,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
     {
         public float MaxCooldown = 1.0f;
         public float CurrentCooldown = 0.0f;
+        public float DamageMultiplier = 5.0f;
 
         public void Attack()
         {
@@ -15,9 +16,11 @@ namespace Assets.Scripts.Actors.Weapons.Sword
                 return;
             CurrentCooldown = 0.0f;
 
+            GetComponent<AudioSource>().Play();
+
             var range = 0.6f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
-            var swordAttack = new SwordAttack(3);
+            var swordAttack = new SwordAttack((uint) DamageMultiplier);
 
             var allObjects = GameObject.FindObjectsOfType<GameObject>();
             foreach (var obj in allObjects)

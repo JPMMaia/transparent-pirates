@@ -6,12 +6,13 @@ namespace Assets.Scripts.Actors.Weapons.Claws
 {
     class Claw : MonoBehaviour, IWeapon
     {
-
+		public float DamageMultiplier = 20.0f;
         public void Attack()
         {
             var range = 2f;
             var collisionCenter = transform.parent.position + transform.parent.right * range;
-            var swordAttack = new ClawAttack(20);
+            
+            var swordAttack = new ClawAttack((uint)DamageMultiplier);
 
             var allObjects = GameObject.FindGameObjectsWithTag("Player");
 
