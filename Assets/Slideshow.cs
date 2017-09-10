@@ -64,7 +64,7 @@ public class Slideshow : MonoBehaviour
 		CurrentSlide = 0;
 		_elapsed = false;
 		
-		_timer = new Timer(2000.0);
+		_timer = new Timer(3000.0);
 		_timer.Elapsed += _timer_Elapsed;
 
 		_timer.Start();
