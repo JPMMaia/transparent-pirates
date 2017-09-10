@@ -20,11 +20,7 @@ public class EnemyAI : MonoBehaviour {
     private void HealthState_OnDie(object sender, System.EventArgs e)
     {
         _animator.SetBool("Alive", false);
-        GetComponent<Seeker>().enabled = false;
-        GetComponent<AIPath>().enabled = false;
-        GetComponentInChildren<BoxCollider2D>().enabled = false;
-        GetComponent<EnemyAI>().enabled = false;
-        GetComponentInChildren<KeepRotation>().enabled = false;
+        Deactivate();
     }
 
     // Update is called once per frame
@@ -51,4 +47,21 @@ public class EnemyAI : MonoBehaviour {
             _animator.SetBool("Attacking", false);
         }
 	}
+
+    public void Activate()
+    {
+        GetComponent<Seeker>().enabled = true;
+        GetComponent<AIPath>().enabled = true;
+        GetComponentInChildren<BoxCollider2D>().enabled = true;
+        GetComponent<EnemyAI>().enabled = true;
+        GetComponentInChildren<KeepRotation>().enabled = true;
+    }
+    public void Deactivate()
+    {
+        GetComponent<Seeker>().enabled = false;
+        GetComponent<AIPath>().enabled = false;
+        GetComponentInChildren<BoxCollider2D>().enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
+        GetComponentInChildren<KeepRotation>().enabled = false;
+    }
 }
