@@ -14,6 +14,7 @@ public class BossTrigger : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Boss.Activate();
+            gameObject.SetActive(false);
         }
     }
 }

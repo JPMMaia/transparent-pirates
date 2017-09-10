@@ -24,6 +24,7 @@ namespace Assets.Scripts.Actors.Weapons.Pistols
                 return _ignoreTags;
             }
         }
+        
 
         public float DamageMultiplier = 1.0f;
 

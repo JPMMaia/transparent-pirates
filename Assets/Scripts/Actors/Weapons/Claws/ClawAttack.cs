@@ -1,4 +1,6 @@
-﻿namespace Assets.Scripts.Actors.Weapons.Claws
+﻿using System;
+
+namespace Assets.Scripts.Actors.Weapons.Claws
 {
     class ClawAttack : IDamager
     {

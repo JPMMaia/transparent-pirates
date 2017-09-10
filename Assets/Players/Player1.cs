@@ -7,20 +7,28 @@ public class Player1 : MonoBehaviour {
     public float maxSpeed = 5f;
     Vector2 move;
     Rigidbody2D rigidBody;
+    Animator anim;
 
 	// Use this for initialization
 	void Start ()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        anim = GetComponentInChildren<Animator>();
+
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             var weaponState = GetComponent<Assets.Scripts.Actors.ActorWeaponState>();
             weaponState.Attack();
+            anim.SetBool("Attacking", true);
+        }
+        else
+        {
+            anim.SetBool("Attacking", false);
         }
     }
 

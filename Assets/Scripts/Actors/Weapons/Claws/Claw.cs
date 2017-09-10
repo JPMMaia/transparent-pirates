@@ -1,5 +1,4 @@
-﻿using System;
-using Assets.Scripts.Utils;
+﻿using Assets.Scripts.Utils;
 using UnityEngine;
 
 namespace Assets.Scripts.Actors.Weapons.Claws
@@ -10,6 +9,7 @@ namespace Assets.Scripts.Actors.Weapons.Claws
         public float CurrentCooldown = 0.0f;
 
         public float DamageMultiplier = 20.0f;
+
         public void Attack()
         {
             if (CurrentCooldown < MaxCooldown)

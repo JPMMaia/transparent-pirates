@@ -8,14 +8,14 @@ namespace Assets.Scripts.Actors
     {
         public event EventHandler OnDie;
 
-        public uint MaxHealth;
-        public uint Health;
+        public float MaxHealth;
+        public float Health;
 
         public float HealthPercentage
         {
             get
             {
-                return (float)Health / (float)MaxHealth;
+                return Health / MaxHealth;
             }
         }
         public bool IsDeath
@@ -36,7 +36,16 @@ namespace Assets.Scripts.Actors
             if (IsDeath)
                 return;
 
-            if (damager.Damage >= Health)
+            var damage = damager.Damage * UnityEngine.Random.Range(.8f, 1.2f);
+            if (UnityEngine.Random.Range(0f, 1f) < .4f)
+            {
+                damage *= 2;
+                Debug.Log("Crit");
+            }
+
+            Health -= Mathf.FloorToInt(damage);
+            
+            if (Health <= 0)
             {
                 Health = 0;
 
@@ -46,7 +55,6 @@ namespace Assets.Scripts.Actors
                 return;
             }
 
-            Health -= damager.Damage;
         }
     }
 }
