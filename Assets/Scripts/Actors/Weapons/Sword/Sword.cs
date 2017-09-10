@@ -34,7 +34,7 @@ namespace Assets.Scripts.Actors.Weapons.Sword
                     continue;
 
                 var deltaPosition = obj.transform.position - collisionCenter;
-                if (deltaPosition.magnitude > 1.0f)
+                if (deltaPosition.magnitude > 3.0f)
                     continue;
 
                 var damageables = obj.GetInterfaces<IDamageable>();   

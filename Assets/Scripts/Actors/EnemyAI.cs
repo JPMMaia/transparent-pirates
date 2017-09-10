@@ -12,7 +12,20 @@ public class EnemyAI : MonoBehaviour {
 	void Start () {
         _animator = GetComponentInChildren<Animator>();
         target = GetComponentInParent<AIPath>().target;
+
+        var healthState = GetComponent<ActorHealthState>();
+        healthState.OnDie += HealthState_OnDie;
 	}
+
+    private void HealthState_OnDie(object sender, System.EventArgs e)
+    {
+        _animator.SetBool("Alive", false);
+        GetComponent<Seeker>().enabled = false;
+        GetComponent<AIPath>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
+        GetComponentInChildren<KeepRotation>().enabled = false;
+    }
 
     // Update is called once per frame
     void Update() {

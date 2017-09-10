@@ -6,11 +6,18 @@ namespace Assets.Scripts.Actors.Weapons.Claws
 {
     class Claw : MonoBehaviour, IWeapon
     {
-		public float DamageMultiplier = 20.0f;
+        public float MaxCooldown = 1.0f;
+        public float CurrentCooldown = 0.0f;
+
+        public float DamageMultiplier = 20.0f;
         public void Attack()
         {
-            var range = 2f;
-            var collisionCenter = transform.parent.position + transform.parent.right * range;
+            if (CurrentCooldown < MaxCooldown)
+                return;
+            CurrentCooldown = 0.0f;
+
+            var range = 3f;
+            var collisionCenter = transform.parent.position + transform.parent.up * range;
             
             var swordAttack = new ClawAttack((uint)DamageMultiplier);
 
@@ -22,12 +29,12 @@ namespace Assets.Scripts.Actors.Weapons.Claws
                     continue;
 
                 var direction = obj.transform.position - transform.parent.position;
-                var dotProduct = Vector3.Dot(direction, -transform.right);
+                var dotProduct = Vector3.Dot(direction, transform.up);
                 if (dotProduct < 0.0f)
                     continue;
 
                 var deltaPosition = obj.transform.position - collisionCenter;
-                if (deltaPosition.magnitude > 1.0f)
+                if (deltaPosition.magnitude > 2.0f)
                     continue;
 
                 var damageables = obj.GetInterfaces<IDamageable>();
@@ -36,6 +43,11 @@ namespace Assets.Scripts.Actors.Weapons.Claws
                     damageable.TakeDamageFrom(swordAttack);
                 }
             }
+        }
+
+        public void FixedUpdate()
+        {
+            CurrentCooldown += Time.fixedDeltaTime;
         }
     }
 }
